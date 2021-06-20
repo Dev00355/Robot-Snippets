@@ -1,9 +1,9 @@
-# Robot-Framework code snippets README
+# Robot-Framework code snippets generator README
 
 
 ## Features
 
-Quick and easy advanced Robot-Framework code snippets for VS Code, you can use to help speed up your development. For example, if you need to connect to SAP on the fly then we've got you covered! 
+Quick and easy advanced Robot-Framework code snippets for VS Code, you can use this to help speed up your development. For example, if you need to connect to SAP on the fly then we've got you covered! 
 
 ![Demo](resources/Robot-Snippets.gif)
 
@@ -34,7 +34,7 @@ Only works with ".robot" files.
 
 ### 0.0.1
 
-Initial release of robot-snippets. At present covering SapGuiLibrary and ScreenCapLibrary
+Initial release of robot-snippets, covering SapGuiLibrary and ScreenCapLibrary
 
 
 -----------------------------------------------------------------------------------------------------------
