@@ -6,7 +6,8 @@
             "AutoItLibrary.Run  \t ${1:sap_exe path}",
             "Comment \t Sleep \t ${2:1s}",
             "AutoItLibrary.Wait For Active Window  \t  ${3:Sap Logon}",
-            "SapGuiLibrary.Connect To Session \t  ${4:sapsystemname}"
+            "SapGuiLibrary.Connect To Session \t  explicit_wait=1",
+            "SapGuiLibrary.Open Connection \t  ${4:sapsystemname}"
         ],
         "description": "Open sap system"
     },
