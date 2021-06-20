@@ -1,0 +1,288 @@
+{
+    // related to sap
+    "Open SAP":{
+        "prefix": "open sap system",
+        "body": [ 
+            "AutoItLibrary.Run  \t ${1:sap_exe path}",
+            "Comment \t Sleep \t ${2:1s}",
+            "AutoItLibrary.Wait For Active Window  \t  ${3:Sap Logon}",
+            "SapGuiLibrary.Connect To Session \t  ${4:sapsystemname}"
+        ],
+        "description": "Open sap system"
+    },
+    "Close SAP":{
+        "prefix": "close sap",
+        "body": "SapGuiLibrary.Run Transaction \t /nex",
+        "description": "close sap"
+    },
+    "SAP Connect to Existing Session":{
+        "prefix": "connect to existing sap session",
+        "body": "SapGuiLibrary.Connect To Existing Session \t ${1:connection_name}",
+        "description": "connect to existing sap session"
+    },
+    "SAP Disable Screenshot":{
+        "prefix": "disable screenshot on error in sap",
+        "body": "SapGuiLibrary.Disable Screenshots On Error",
+        "description": "disable screenshots on error"
+    },
+    "SAP Element Should be present":{
+        "prefix": "element present?",
+        "body": "SapGuiLibrary.Element Should Be Present \t ${1:elementId} \t message=None",
+        "description": "checks whether element is present or not"
+    },
+    "SAP Element value should be equal to":{
+        "prefix": "element value should be",
+        "body": "SapGuiLibrary.Element Value Should Be  \t ${1:elementId} \t ${2:expected Value}\t message=None",
+        "description": "checks whether element is equal to expected or not"
+    },
+    "SAP Element value should conatain":{
+        "prefix": "element value should contain",
+        "body": "SapGuiLibrary.Element Value Should Contain  \t ${1:elementId} \t ${2:expected Value} \t message=None",
+        "description": "checks whether element containing the value"
+    },
+    "SAP Enable Screenshots on Error":{
+        "prefix": "enable screenshot on error in sap",
+        "body": "SapGuiLibrary.Enable Screenshots On Error",
+        "description": "enable screenshots on error"
+    },
+    "SAP Get Cell Value":{
+        "prefix": "get cell value",
+        "body": "SapGuiLibrary.Get Cell Value \t ${1:table_id} \t ${2:row_num} \t ${3:col_id}",
+        "description": "returns the cell value of specified cell"
+    },
+    "SAP Get Element Location":{
+        "prefix": "get element location",
+        "body": "SapGuiLibrary.Get Element Location \t ${1:element_id} ",
+        "description": "Returns the SAP element location for the given element"
+    },
+    "SAP Get Element Type":{
+        "prefix": "get element type",
+        "body": "SapGuiLibrary.Get Element Type \t ${1:element_id} ",
+        "description": "Returns the SAP element type for the given element"
+    },
+    "SAP Get Row Count":{
+        "prefix": "get row count",
+        "body": "SapGuiLibrary.Get Row Count \t ${1:table_id} ",
+        "description": "Returns the no of rows found in specified table"
+    },
+    "SAP Get Scroll Position":{
+        "prefix": "get scroll position in SAP",
+        "body": "SapGuiLibrary.Get Scroll Position \t ${1:element_id} ",
+        "description": "Returns the scroll position of the scrollbar of an element"
+    },
+    "SAP Get Value":{
+        "prefix": "get value of element in SAP",
+        "body": "SapGuiLibrary.Get Value \t ${1:element_id} ",
+        "description": "Returns the SAP element value for the given element id"
+    },
+    "SAP Get Window Title":{
+        "prefix": "get SAP window title",
+        "body": "SapGuiLibrary.Get Window Title \t ${1:locator} ",
+        "description": "Returns the SAP window title"
+    },
+    "SAP Input Password":{
+        "prefix": "input password",
+        "body": "SapGuiLibrary.Input Password \t ${1:element_id} \t ${2:password}",
+        "description": "To enter SAP system password"
+    },
+    "SAP Enter Password":{
+        "prefix": "enter password",
+        "body": "SapGuiLibrary.Input Password \t ${1:element_id} \t ${2:password}",
+        "description": "To enter SAP system password"
+    },
+    "SAP Text Input":{
+        "prefix": "input text",
+        "body": "SapGuiLibrary.Input Text \t ${1:element_id} \t ${2:text}",
+        "description": "To enter SAP system password"
+    },
+    "SAP Window Maximize":{
+        "prefix": "window maximize",
+        "body": "SapGuiLibrary.Maximize Window \t window=0",
+        "description": "To Maximize the SAP Window"
+    },
+    "SAP Open Connection":{
+        "prefix": "open connection",
+        "body": "SapGuiLibrary.Open Connection \t ${1:connection_name}",
+        "description": "Open Connection with System"
+    },
+    "SAP scroll":{
+        "prefix": "Scroll",
+        "body": "SapGuiLibrary.Scroll \t ${1:element_id} \t ${2:position}",
+        "description": "Scroll to a particular element contained within shell object"
+    },
+    "SAP select checkbox":{
+        "prefix": "select checkbox",
+        "body": "SapGuiLibrary.Select Checkbox \t ${1:element_id}",
+        "description": "Open transaction"
+    },
+    "SAP select context menu item":{
+        "prefix": "select context menu Item",
+        "body": "SapGuiLibrary.Select Context Menu Item \t ${1:element_id} \t ${2:button_id} \t ${3:item_id}",
+        "description": "Select context Menu Item"
+    },
+    "SAP select from list By label":{
+        "prefix": "select from list by label",
+        "body": "SapGuiLibrary.Select From List By Label \t ${1:element_id} \t ${2:value}",
+        "description": "Select from list by label"
+    },
+    "SAP select node":{
+        "prefix": "select node",
+        "body": "SapGuiLibrary.Select Node \t ${1:tree_id} \t ${2:node_id} \t expand=False",
+        "description": "select node"
+    },
+    "SAP select node link":{
+        "prefix": "select node link",
+        "body": "SapGuiLibrary.Select Node Link \t ${1:tree_id} \t ${2:link_id1} \t ${3:link_id2}",
+        "description": "select node link"
+    },
+    "SAP Radio Button":{
+        "prefix": "select Radio Button",
+        "body": "SapGuiLibrary.Select Radio Button  \t ${1:element_id}",
+        "description": "select radio button"
+    },
+    "SAP select table cloumn":{
+        "prefix": "select table column",
+        "body": "SapGuiLibrary.Select Table Column \t ${1:table_id} \t ${2:column_id} ",
+        "description": "select table column"
+    },
+    "SAP select table row":{
+        "prefix": "select table row",
+        "body": "SapGuiLibrary.Select Table Row \t ${1:table_id} \t ${2:row_num} ",
+        "description": "select table row"
+    },
+    "SAP set explicit wait":{
+        "prefix": "set explicit wait",
+        "body": "SapGuiLibrary.Set Explicit Wait \t ${1:500ms}",
+        "description": "set explict wait"
+    },
+    "SAP Take Screenshot":{
+        "prefix": "take screenshot",
+        "body": "SapGuiLibrary.Take Screenshot \t screenshot_name=${1:sap-screenshot}",
+        "description": "take screenshot"
+    },
+    "click element SAP":{
+        "prefix": "click element",
+        "body": "SapGuiLibrary.Click Element \t ${1:elementid}",
+        "description": "Click Element"
+    },
+    "double click element SAP":{
+        "prefix": "double click element",
+        "body": "SapGuiLibrary.Doubleclick Element \t ${1:elementid} \t ${2:itemid} \t ${3:cloumnid}",
+        "description": "double click on element"
+    },
+    "Open Transaction":{
+        "prefix": "open transaction",
+        "body": "SapGuiLibrary.Run Transaction \t ${1:transaction}",
+        "description": "Open transaction"
+    },
+    "Run Transaction":{
+        "prefix": "open transaction",
+        "body": "SapGuiLibrary.Run Transaction \t ${1:transaction}",
+        "description": "Open transaction"
+    },
+    "enter":{
+        "prefix": "enter",
+        "body": "SapGuiLibrary.Send Vkey \t 0",
+        "description": "presses enter in SAP screen"
+    },
+    "save":{
+        "prefix": "save",
+        "body": "SapGuiLibrary.Send Vkey \t F11",
+        "description": "save entered data in sap"
+    },
+    "go back":{
+        "prefix": "go back",
+        "body": "SapGuiLibrary.Send Vkey \t F3",
+        "description": "go back in sap"
+    },
+    "F3":{
+        "prefix": "f3",
+        "body": "SapGuiLibrary.Send Vkey \t F3",
+        "description": "go back in sap"
+    },
+    "SAP Page Down":{
+        "prefix": "page down",
+        "body": "SapGuiLibrary.Send Vkey \t 82",
+        "description": "page down in sap"
+    },
+    "SAP Page Up":{
+        "prefix": "page up",
+        "body": "SapGuiLibrary.Send Vkey \t 81",
+        "description": "page down in sap"
+    },
+    "SAP Escape":{
+        "prefix": "escape",
+        "body": "SapGuiLibrary.Send Vkey \t 12",
+        "description": "escape button in sap"
+    },
+    // screencap library
+    "Pause Video Recording":{
+        "prefix": "pause video",
+        "body": "ScreenCapLibrary.Pause Video Recording \t alias=None",
+        "description": "pause video recording"
+    },
+    "Resume Video Recording":{
+        "prefix": "resume video",
+        "body": "ScreenCapLibrary.Resume Video Recording \t alias=None",
+        "description": "resume video recording"
+    },
+    "Set Screenshot Directory":{
+        "prefix": "set screenshot directory",
+        "body": "ScreenCapLibrary.Set Screenshot Directory \t ${1:path}",
+        "description": "set screenshot directory"
+    },
+    "Start Gif Recording":{
+        "prefix": "start gif recording",
+        "body": "ScreenCapLibrary.Start Gif Recording \t name=Screenshot \t size_percentage=0.5 \t embed=True \t embed_width=800px \t monitor=1 \t optimize=True",
+        "description": "start gif recording"
+    },
+    "Stop Gif Recording":{
+        "prefix": "stop gif recording",
+        "body": "ScreenCapLibrary.Stop Gif Recording ",
+        "description": "stop gif recording"
+    },
+    "ScreenCap Start Video Recording":{
+        "prefix": "Start Video Recording",
+        "body": "ScreenCapLibrary.Start Video Recording \t alisa=None \t name=recording \t fps=None \t size_percentage=1 \t embed=True \t embed_width=800px \t monitor=1",
+        "description": "start video recording"
+    },
+    "ScreenCap Stop Video Recording":{
+        "prefix": "Stop Video Recording",
+        "body": "ScreenCapLibrary.Start Video Recording \t alisa=None ",
+        "description": "Stop video recording"
+    },
+    "ScreenCap Stop All Video Recording":{
+        "prefix": "Stop all Video Recording",
+        "body": "ScreenCapLibrary.Start All Video Recording",
+        "description": "stop all video recording"
+    },
+    "ScreenCap Take Multiple Screenshots":{
+        "prefix": "Take mulitple screenshots",
+        "body": "ScreenCapLibrary.Take Multiple Screenshots \t name=screenshot \t format=None \t quality=None \t screenshot_number=2 \t delay_time=0 \t monitor=1",
+        "description": "Take multiple screenshots (by default 2)"
+    },
+    "ScreenCap Take Partial Screenshot":{
+        "prefix": "Take Partial Screenshot",
+        "body": "ScreenCapLibrary.Take Partial Screenshot \t name=screenshot \t format=None \t quality=None \t left=0 \t top=0 \t wideth=700 \t height=300 \t embed=True \t embed_width=800px \t monitor=1",
+        "description": "take partial screenshot"
+    },
+    "ScreenCap Take Screenshot":{
+        "prefix": "Take Screenshot",
+        "body": "ScreenCapLibrary.Take Screenshot \t name=screenshot \t format=None \t quality=None \t width=800px \t delay=0 \t monitor=1",
+        "description": "take partial screenshot"
+    },
+    "ScreenCap Take Screenshot Without Embedding":{
+        "prefix": "Take Screenshot Without Embedding",
+        "body": "ScreenCapLibrary.Take Screenshot Without Embedding \t name=screenshot \t format=None \t quality=None \t delay=0 \t monitor=1",
+        "description": "take partial screenshot"
+    }
+    // rpa excel files
+    // "Open RPA Excel":{
+    //     "prefix": "open rpa excel",
+    //     "body": [
+    //         "RPA.Excel.Files.Open Workbook \t ${1:filepath}"
+    //     ],
+    //     "description": "Open Excel using RPA.Excel"
+    // }
+    
+}

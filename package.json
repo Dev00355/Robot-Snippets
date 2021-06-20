@@ -1,0 +1,27 @@
+{
+    "name": "robot-snippets",
+    "displayName": "Robot-Snippets",
+    "description": "robot framework code snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "extensionDependencies": [
+        "tomiturtiainen.rf-intellisense"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "robot",
+                "extensions":[
+                    ".robot",
+                    ".resource"
+                ],
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
