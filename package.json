@@ -1,11 +1,16 @@
 {
     "name": "robot-snippets",
     "displayName": "Robot-Snippets",
-    "description": "robot framework code snippets",
+    "publisher": "DevPandey",
+    "description": "Robot framework code snippets",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.38.0"
     },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Dev00355/Robot-Snippets.git"
+	},
     "categories": [
         "Snippets"
     ],
