@@ -3,7 +3,7 @@
 
 ## Features
 
-Quick and easy advanced Robot-Framework code snippets for VS Code you can use to help speed up your development. For example, if you need to connect to SAP on the fly then we've got you covered! 
+Quick and easy advanced Robot-Framework code snippets for VS Code, you can use to help speed up your development. For example, if you need to connect to SAP on the fly then we've got you covered! 
 
 ![Demo](resources/Robot-Snippets.gif)
 
@@ -11,10 +11,10 @@ Just start typing commands like:
 
 | Command  | Snippet |
 | -------: | ------- |
-| `Close SAP` | SapGuiLibrary.Run Transaction \t /nex |
-| `Save ` | SapGuiLibrary.Send Vkey \t F11 |
-| `go back` | SapGuiLibrary.Send Vkey \t F3 |
-| `Start Video Recording` | ScreenCapLibrary.Start Video Recording \t alisa=None \t name=recording \t fps=None \t size_percentage=1 \t embed=True \t embed_width=800px \t monitor=1 |
+| `Close SAP->` | SapGuiLibrary.Run Transaction \t /nex |
+| `Save->` | SapGuiLibrary.Send Vkey \t F11 |
+| `go back->` | SapGuiLibrary.Send Vkey \t F3 |
+| `Start Video Recording->` | ScreenCapLibrary.Start Video Recording \t alisa=None \t name=recording \t fps=None \t size_percentage=1 \t embed=True \t embed_width=800px \t monitor=1 |
 
 ## Requirements
 
@@ -34,7 +34,7 @@ Only works with ".robot" files.
 
 ### 0.0.1
 
-Initial release of robot-snippets
+Initial release of robot-snippets. At present covering SapGuiLibrary and ScreenCapLibrary
 
 
 -----------------------------------------------------------------------------------------------------------
