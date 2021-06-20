@@ -180,12 +180,12 @@
         "body": "SapGuiLibrary.Run Transaction \t ${1:transaction}",
         "description": "Open transaction"
     },
-    "enter":{
+    "enter in SAP":{
         "prefix": "enter",
         "body": "SapGuiLibrary.Send Vkey \t 0",
         "description": "presses enter in SAP screen"
     },
-    "save":{
+    "save in SAP":{
         "prefix": "save",
         "body": "SapGuiLibrary.Send Vkey \t F11",
         "description": "save entered data in sap"
