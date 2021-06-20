@@ -7,7 +7,7 @@ Quick and easy advanced Robot-Framework code snippets for VS Code, you can use t
 
 ![Demo](resources/Robot-Snippets.gif)
 
-Just start typing commands like:
+Just start typing desired commands for example:
 
 | Command  | Snippet |
 | -------: | ------- |
