@@ -191,7 +191,7 @@
         "body": "SapGuiLibrary.Send Vkey \t F11",
         "description": "save entered data in sap"
     },
-    "go back":{
+    "SAP go back":{
         "prefix": "go back",
         "body": "SapGuiLibrary.Send Vkey \t F3",
         "description": "go back in sap"
@@ -276,6 +276,122 @@
         "prefix": "Take Screenshot Without Embedding",
         "body": "ScreenCapLibrary.Take Screenshot Without Embedding \t name=screenshot \t format=None \t quality=None \t delay=0 \t monitor=1",
         "description": "take partial screenshot"
+    },
+    // SeleniumLibrary Python
+
+    "Selenium Add Cookie":{
+        "prefix": "Add Cookie",
+        "body": "SeleniumLibrary.Add Cookie \t name=${1:cookie} \t value=${2:value} \t path=None \t domain=None \t secure=None \t expiry=None",
+        "description": "Add Cookies"
+    },
+    "Selenium Add Location Strategy":{
+        "prefix": "Add Location Strategy",
+        "body": "SeleniumLibrary.Add Location Strategy \t strategy_name=${1:name} \t strategy_keyword=${2:keyword} \t persist=False",
+        "description": "Add Location Strategy"
+    },
+    "Selenium Alert should be present":{
+        "prefix": "Alert Should Be Present",
+        "body": "SeleniumLibrary.Alert Should Be Present \t text=${1:} \t action=ACCEPT \t timeout=None",
+        "description": "verifies that alert is present and by default accepts it"
+    },
+    "Selenium Alert should not be present":{
+        "prefix": "Alert Should Not Be Present",
+        "body": "SeleniumLibrary.Alert Should Not Be Present \t action=ACCEPT \t timeout=None",
+        "description": "verifies that alert is not present"
+    },
+    "Selenium Assign ID to Element":{
+        "prefix": "Assign Id To Element",
+        "body": "SeleniumLibrary.Assign Id To Element \t locator=${1:webelement} \t id=${2:Id1}",
+        "description": "assigns temporary id to an element"
+    },
+    "Selenium Capture Element Screenshot":{
+        "prefix": "Capture Element Screenshot",
+        "body": "SeleniumLibrary.Capture Element Screenshot \t locator=${1:webelement} \t filename=${2:selenium-element-screenshot-1.png}",
+        "description": "captures a screenshot from the element identified by locator and embeds it into log file"
+    },
+    "Selenium Capture Page Screenshot":{
+        "prefix": "Capture Page Screenshot",
+        "body": "SeleniumLibrary.Capture Page Screenshot \t filename=${1:selenium-screenshot-1.png}",
+        "description": "Takes a screenshot of the current page and embeds it into log file"
+    },
+    "Selenium Checkbox should be selected":{
+        "prefix": "Checkbox Should Be Selected",
+        "body": "SeleniumLibrary.Checkbox Should Be Selected \t locator=${1:webelement}",
+        "description": "verifies checkbox locator is selected/checked"
+    },
+    "Selenium Checkbox should not be selected":{
+        "prefix": "Checkbox Should Not Be Selected",
+        "body": "SeleniumLibrary.Checkbox Should Not Be Selected \t locator=${1:webelement}",
+        "description": "verifies checkbox locator is not selected/checked"
+    },
+    "Selenium Choose file":{
+        "prefix": "Choose file",
+        "body": "SeleniumLibrary.Choose File \t locator=${1:webelement} \t file_path=${2:filepath}",
+        "description": "Inputs the file_path into the file input field"
+    },
+    "Selenium Clear Element Text":{
+        "prefix": "Clear Element Text",
+        "body": "SeleniumLibrary.Clear Element Text \t locator=${1:webelement}",
+        "description": "clears the value of the text-input-element identified by locator"
+    },
+    "Selenium Clear and Input Text":{
+        "prefix": "Clear and Input Text",
+        "body": [
+                "SeleniumLibrary.Input Text \t locator=${1:webelement} \t text=${2:text} \t clear=True"
+            ],
+        "description": "clears the value of the text-input-element identified by locator and inputs the text"
+    },
+    "Selenium Input Text without clearing":{
+        "prefix": "Clear and Input Text",
+        "body": [
+                "SeleniumLibrary.Input Text \t locator=${1:webelement} \t text=${2:text} \t clear=False"
+            ],
+        "description": "inputs the text without clearing"
+    },
+    "Selenium Click Button":{
+        "prefix": "Click Button",
+        "body": "SeleniumLibrary.Click Button \t locator=${1:webelement} \t modifier=False",
+        "description": "clicks the button identified by locator"
+    },
+    "Selenium Click Element":{
+        "prefix": "Click Element",
+        "body": "SeleniumLibrary.Click Element \t locator=${1:webelement} \t modifier=False \t action_chain=False",
+        "description": "clicks the element identified by locator"
+    },
+    "Selenium Click Element At Coordinates":{
+        "prefix": "Click Element At Coordinates",
+        "body": "SeleniumLibrary.Click Element At Coordinates \t locator=${1:webelement} \t xoffset=${2:1} \t yoffset=${3:2}",
+        "description": "clicks the element locator at xoffset/yoffset"
+    },
+    "Selenium Click Image":{
+        "prefix": "Click Image",
+        "body": "SeleniumLibrary.Click Image \t locator=${1:webelement} \t modifier=False",
+        "description": "clicks an image identified by locator"
+    },
+    "Selenium Click Link":{
+        "prefix": "Click Link",
+        "body": "SeleniumLibrary.Click Link \t locator=${1:webelement} \t modifier=False",
+        "description": "clicks a link identified by locator"
+    },
+    "Selenium Close all browsers":{
+        "prefix": "Click All Browsers",
+        "body": "SeleniumLibrary.Close All Browsers ",
+        "description": "closes all open browsers and resets the browser cache"
+    },
+    "Selenium Close browser":{
+        "prefix": "Click Browser",
+        "body": "SeleniumLibrary.Close Browser",
+        "description": "closes the current browser"
+    },
+    "Selenium Close window":{
+        "prefix": "Click Window",
+        "body": "SeleniumLibrary.Close Window",
+        "description": "closes currently opened and selected browser window/tab"
+    },
+    "Selenium Cover Element":{
+        "prefix": "Cover Element",
+        "body": "SeleniumLibrary.Cover Element \t locator=${1:webelement}",
+        "description": "cover elements identified by locator with a blue div without breaking page layout"
     }
     // rpa excel files
     // "Open RPA Excel":{
