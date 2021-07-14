@@ -392,6 +392,484 @@
         "prefix": "Cover Element",
         "body": "SeleniumLibrary.Cover Element \t locator=${1:webelement}",
         "description": "cover elements identified by locator with a blue div without breaking page layout"
+    },
+    "Selenium Create Webdriver":{
+        "prefix": "Create Webdriver",
+        "body": "SeleniumLibrary.Create Webdriver \t driver_name=${1:Chrome} \t executable_path=${2:chromedriver_path}",
+        "description": "create an instance of webdriver"
+    },
+    "Selenium Current Frame Should Contain":{
+        "prefix": "Current Frame Should Contain",
+        "body": "SeleniumLibrary.Current Frame Should Contain \t text=${1:text_to_verify} \t loglevel=INFO",
+        "description": "verifies the current frame contains text"
+    },
+    "Selenium Current Frame Should Not Contain":{
+        "prefix": "Current Frame Should Not Contain",
+        "body": "SeleniumLibrary.Current Frame Should Not Contain \t text=${1:text_to_verify} \t loglevel=INFO",
+        "description": "verifies the current frame does not contain text"
+    },
+    "Selenium Delete All Cookies":{
+        "prefix": "Delete All Cookies",
+        "body": "SeleniumLibrary.Delete All Cookies",
+        "description": "deletes all cookies"
+    },
+    "Selenium Delete Cookie":{
+        "prefix": "Delete Cookie",
+        "body": "SeleniumLibrary.Delete Cookie \t ${1:name}",
+        "description": "deletes cookie matching name"
+    },
+    "Selenium Double Click Element":{
+        "prefix": "Double Click Element",
+        "body": "SeleniumLibrary.Double Click Element \t locator=${1:webelement}",
+        "description": "double click on element"
+    },
+    "Selenium Drag and Drop":{
+        "prefix": "Drag and Drop",
+        "body": "SeleniumLibrary.Drag and Drop \t locator=${1:webelement} \t target=$2:target_element}",
+        "description": "Drags Element identifeid by locator to target elment"
+    },
+    "Selenium Drag and Drop By Offset":{
+        "prefix": "Drag and Drop by offset",
+        "body": "SeleniumLibrary.Drag and Drop By Offset \t locator=${1:webelement} \t xoffset=$2:xoffset} \t yoffset=${3:yoffset}",
+        "description": "Drags Element identifeid by locator by xoffset/yoffset"
+    },
+    "Selenium Element Attribute Value Should Be":{
+        "prefix": "Element Attribute Value Should Be",
+        "body": "SeleniumLibrary.Element Attribute Value Should Be \t locator=${1:webelement} \t attribute=$2:attribute} \t expected=${3:} \t message=None",
+        "description": "Verfies element identified by locator contains expected value"
+    },
+    "Selenium Element Should Be Disabled":{
+        "prefix": "Element Should Be Disabled",
+        "body": "SeleniumLibrary.Element Should Be Disabled \t locator=${1:webelement}",
+        "description": "Verfies element identified by locator is disabled"
+    },
+    "Selenium Element Should Be Enbaled":{
+        "prefix": "Element Should Be Enabled",
+        "body": "SeleniumLibrary.Element Should Be Enabled \t locator=${1:webelement}",
+        "description": "Verfies element identified by locator is enabled"
+    },
+    "Selenium Element Should Be Focused":{
+        "prefix": "Element Should Be Focused",
+        "body": "SeleniumLibrary.Element Should Be Focused \t locator=${1:webelement}",
+        "description": "Verfies element identified by locator is focused"
+    },
+    "Selenium Element Should Be Visible":{
+        "prefix": "Element Should Be Visible",
+        "body": "SeleniumLibrary.Element Should Be Visible \t locator=${1:webelement} \t message=None",
+        "description": "Verfies element identified by locator is visible, message argument can be used to override the default error message"
+    },
+    "Selenium Element Should Not Be Visible":{
+        "prefix": "Element Should Not Be Visible",
+        "body": "SeleniumLibrary.Element Should Not Be Visible \t locator=${1:webelement} \t message=None",
+        "description": "Verfies element identified by locator is NOT visible, message argument can be used to override the default error message"
+    },
+    "Selenium Element Should Contain":{
+        "prefix": "Element Should Contain",
+        "body": "SeleniumLibrary.Element Should Contain \t locator=${1:webelement} \t expected={2:expecetd_text} \t message=None \t ignore_case=False",
+        "description": "Verfies the element locator contians expected text"
+    },
+    "Selenium Element Should Not Contain":{
+        "prefix": "Element Should Not Contain",
+        "body": "SeleniumLibrary.Element Should Not Contain \t locator=${1:webelement} \t expected={2:expecetd_text} \t message=None \t ignore_case=False",
+        "description": "Verfies the element locator does not contian expected text"
+    },
+    "Selenium Element Text Should Be":{
+        "prefix": "Element Text Should Be",
+        "body": "SeleniumLibrary.Element Text Should Be \t locator=${1:webelement} \t expected={2:expecetd_text} \t message=None \t ignore_case=False",
+        "description": "Verfies the element locator contians exatc expected text"
+    },
+    "Selenium Element Text Should Not Not Be":{
+        "prefix": "Element Text Should Not Be",
+        "body": "SeleniumLibrary.Element Text Should Not Be \t locator=${1:webelement} \t expected={2:expecetd_text} \t message=None \t ignore_case=False",
+        "description": "Verfies the element locator does not contian expected text"
+    },
+    "Selenium Execute Async Javascript":{
+        "prefix": "Execute Async Javascript",
+        "body": "SeleniumLibrary.Execute Async Javascript \t ${1:async_js_code or .js file}",
+        "description": "Executes async js code with possible arguments"
+    },
+    "Selenium Execute Javascript":{
+        "prefix": "Execute Javascript",
+        "body": "SeleniumLibrary.Execute Javascript \t ${1:s_code or .js file}",
+        "description": "Executes js code with possible arguments"
+    },
+    "Selenium Frame Should Contain":{
+        "prefix": "Frame Should Contain",
+        "body": "SeleniumLibrary.Frame Should Contain \t locator=${1:webelement} \t text=${2:text} \t loglevel=INFO",
+        "description": "Executes js code with possible arguments"
+    },
+    "Selenium Get All links":{
+        "prefix": "Get All Links",
+        "body": "SeleniumLibrary.Get All Links",
+        "description": "Returns a list conatining ids of all links found in current page"
+    },
+    "Selenium Get Browser Aliases":{
+        "prefix": "Get Browser Aliases",
+        "body": "SeleniumLibrary.Get Browser Aliases",
+        "description": "Returns aliases of all active browsers if given at the time of initialization"
+    },
+    "Selenium Get Browser Ids":{
+        "prefix": "Get Browser Ids",
+        "body": "SeleniumLibrary.Get Browser Ids",
+        "description": "Returns index of all active browsers as list"
+    },
+    "Selenium Get Cookie":{
+        "prefix": "Get Cookie",
+        "body": "SeleniumLibrary.Get Cookie \t name=${1:cookie_name}",
+        "description": "Returns information of cookie"
+    },
+    "Selenium Get Cookies":{
+        "prefix": "Get Cookies",
+        "body": "SeleniumLibrary.Get Cookies",
+        "description": "Returns all cookies of the current page"
+    },
+    "Selenium Get Element Attribute":{
+        "prefix": "Get Element Attribute",
+        "body": "SeleniumLibrary.Get Element Attribute \t locator=${1:webelement} \t attribute={2:attribute_name}",
+        "description": "Returns the value of attribute from the element"
+    },
+    "Selenium Get Element Count":{
+        "prefix": "Get Element Count",
+        "body": "SeleniumLibrary.Get Element Count \t locator=${1:webelement}",
+        "description": "Returns the number of elements matching locator"
+    },
+    "Selenium Get Element Count and check count":{
+        "prefix": "Get Element Count and check count",
+        "body": [
+            "${count}= \t SeleniumLibrary.Get Element Count \t locator=${1:webelement}",
+            "Shoule Be True \t ${count} > 1"
+        ],
+            "description": "Returns the number of elements matching locator and then checking the count"
+    },
+    "Selenium Get Element Size":{
+        "prefix": "Get Element Size",
+        "body": "SeleniumLibrary.Get Element Size \t locator=${1:webelement}",
+        "description": "Returns width and height of the element identofied by locator"
+    },
+    "Selenium Get Horizontal Position":{
+        "prefix": "Get Horizontal Position",
+        "body": "SeleniumLibrary.Get Horizontal Position \t locator=${1:webelement}",
+        "description": "Returns horizontal position of the element identofied by locator"
+    },
+    "Selenium Get List Items":{
+        "prefix": "Get List Items",
+        "body": "SeleniumLibrary.Get List Items \t locator=${1:webelement} \t values=False",
+        "description": "Returns all labels or values of selection list locator"
+    },
+    "Selenium Get Location":{
+        "prefix": "Get Location",
+        "body": "SeleniumLibrary.Get Location",
+        "description": "Returns the current browser window URL"
+    },
+    "Selenium Get Locations":{
+        "prefix": "Get Locations",
+        "body": "SeleniumLibrary.Get Locations \t browser=CURRENT",
+        "description": "Returns and logs URLs of all windoes of the selected browser"
+    },
+    "Selenium Get Selected List Label":{
+        "prefix": "Get Selected List Label",
+        "body": "SeleniumLibrary.Get Selected List Label \t locator=${1:webelement}",
+        "description": "Returns the label of selected option from selection list locator"
+    },
+    "Selenium Get Selected List Labels":{
+        "prefix": "Get Selected List Labels",
+        "body": "SeleniumLibrary.Get Selected List Labels \t locator=${1:webelement}",
+        "description": "Returns the labels of selected option from selection list locator"
+    },
+    "Selenium Get Selected List Value":{
+        "prefix": "Get Selected List Value",
+        "body": "SeleniumLibrary.Get Selected List Value \t locator=${1:webelement}",
+        "description": "Returns the value of selected option from selection list locator"
+    },
+    "Selenium Get Selected List Values":{
+        "prefix": "Get Selected List Values",
+        "body": "SeleniumLibrary.Get Selected List Values \t locator=${1:webelement}",
+        "description": "Returns the values of selected option from selection list locator"
+    },
+    "Selenium Get Selenium Implicit Wait":{
+        "prefix": "Get Selenium Implicit Wait",
+        "body": "SeleniumLibrary.Get Selenium Implicit Wait",
+        "description": "Returns the implicit wait value used by Selenium"
+    },
+    "Selenium Get Selenium Speed":{
+        "prefix": "Get Selenium Speed",
+        "body": "SeleniumLibrary.Get Selenium Speed",
+        "description": "Returns the delay that is waited after each selenium command"
+    },
+    "Selenium Get Selenium Timeout":{
+        "prefix": "Get Selenium Timeout",
+        "body": "SeleniumLibrary.Get Selenium Timeout",
+        "description": "Gets the timeout that is used by various keywords"
+    },
+    "Selenium Get Session Id":{
+        "prefix": "Get Session Id",
+        "body": "SeleniumLibrary.Get Session Id",
+        "description": "Returns the currently active browser session id"
+    },
+    "Selenium Get Source":{
+        "prefix": "Get Source",
+        "body": "SeleniumLibrary.Get Source",
+        "description": "Returns the entire HTML source of the current page or frame"
+    },
+    "Selenium Get Table Cell":{
+        "prefix": "Get Table Cell",
+        "body": "SeleniumLibrary.Get Table Cell \t locator=${1:webelement} \t row=${2:rownum} \t column=${3:colnum} \t loglevel=INFO",
+        "description": "Returns the content of table cell"
+    },
+    "Selenium Get Text":{
+        "prefix": "Get Text",
+        "body": "SeleniumLibrary.Get Text \t locator=${1:webelement}",
+        "description": "Returns the text value of the element identified by locator"
+    },
+    "Selenium Get Title":{
+        "prefix": "Get Title",
+        "body": "SeleniumLibrary.Get Title",
+        "description": "Returns the titile of the webpage"
+    },
+    "Selenium Get Value":{
+        "prefix": "Get Value",
+        "body": "SeleniumLibrary.Get Value \t locator=${1:webelement}",
+        "description": "Returns the value attribute of the element identified by locator"
+    },
+    "Selenium Get Verticle Position":{
+        "prefix": "Get Verticle Position",
+        "body": "SeleniumLibrary.Get Verticle Position \t locator=${1:webelement}",
+        "description": "Returns the verticle position of the element identified by locator"
+    },
+    "Selenium Get WebElement":{
+        "prefix": "Get WebElement",
+        "body": "SeleniumLibrary.Get WebElement \t locator=${1:webelement}",
+        "description": "Returns the first webelement identified by locator"
+    },
+    "Selenium Get WebElements":{
+        "prefix": "Get WebElements",
+        "body": "SeleniumLibrary.Get WebElements \t locator=${1:webelement}",
+        "description": "Returns the list of webelement identified by locator"
+    },
+    "Selenium Get Window Handles":{
+        "prefix": "Get Window Handles",
+        "body": "SeleniumLibrary.Get Window Handles \t browser=CURRENT",
+        "description": "Returns the child window handles of the selected browser as a list"
+    },
+    "Selenium Get Window Identifiers":{
+        "prefix": "Get Window Identifiers",
+        "body": "SeleniumLibrary.Get Window Identifiers \t browser=CURRENT",
+        "description": "Returns and logs id attribute of all windows of the selected browser"
+    },
+    "Selenium Get Window Names":{
+        "prefix": "Get Window Names",
+        "body": "SeleniumLibrary.Get Window Names \t browser=CURRENT",
+        "description": "Returns and logs name of all windows of the selected browser"
+    },
+    "Selenium Get Window Position":{
+        "prefix": "Get Window Position",
+        "body": "SeleniumLibrary.Get Window Position",
+        "description": "Returns and logs name of all windows of the selected browser"
+    },
+    "Selenium Get Window Size":{
+        "prefix": "Get Window Size",
+        "body": "SeleniumLibrary.Get Window Size \t inner=False",
+        "description": "Returns current window width and height as integers"
+    },
+    "Selenium Get Window Title":{
+        "prefix": "Get Window Title",
+        "body": "SeleniumLibrary.Get Window Title \t browser=CURRENT",
+        "description": "Returns and logs titles of all windows of the selected browsers"
+    },
+    "Selenium Go Back":{
+        "prefix": "Go Back",
+        "body": "SeleniumLibrary.Go Back",
+        "description": "Simulates the user clicking the back button on their browser"
+    },
+    "Selenium Go To":{
+        "prefix": "Go To",
+        "body": "SeleniumLibrary.Go To \t url=${1:url}",
+        "description": "Navigates the current browser window to provided URL"
+    },
+    "Selenium Handle Alert":{
+        "prefix": "Handle Alert",
+        "body": "SeleniumLibrary.Handle Alert \t action=ACCEPT \t timeout=None",
+        "description": "Handles the current alert and returns its message, different options -> ACCEPT, DISMISS and LEAVE"
+    },
+    "Selenium Input Password":{
+        "prefix": "Input Password",
+        "body": "SeleniumLibrary.Input Password \t locator=${1:webelement} \t password=${2:password} \t clear=True",
+        "description": "Types the given password into the text field identified by locator"
+    },
+    "Selenium Input Text Into Alert":{
+        "prefix": "Input Text Into Alert",
+        "body": "SeleniumLibrary.Input Text Into Alert \t text=${1:text} \t action=ACCEPT \t timeout=None",
+        "description": "Types the given text into an input field in an alert"
+    },
+    "Selenium List Selection Should Be":{
+        "prefix": "List Selection Should Be",
+        "body": "SeleniumLibrary.List Selection Should Be \t locator=${1:webelement} \t ${1:expected_str}",
+        "description": "Verifies selection list locator has expected option available"
+    },
+    "Selenium List Shouldh Have No Selection":{
+        "prefix": "List Shouldh Have No Selection",
+        "body": "SeleniumLibrary.List Shouldh Have No Selection \t locator=${1:webelement}",
+        "description": "Verifies selection list locator has no options selected"
+    },
+    "Selenium Location Should Be":{
+        "prefix": "Location Should Be",
+        "body": "SeleniumLibrary.List Shouldh Have No Selection \t url=${1:url} \t message=None",
+        "description": "Verifies the current URL is exactly the url"
+    },
+    "Selenium Location Should Contain":{
+        "prefix": "Location Should Contain",
+        "body": "SeleniumLibrary.Location Should Contain \t expected=${1:expected} \t message=None",
+        "description": "Verifies the current URL contains expected"
+    },
+    "Selenium Log Location":{
+        "prefix": "Log Location",
+        "body": "SeleniumLibrary.Log Location",
+        "description": "Log and returns the current URL"
+    },
+    "Selenium Log Source":{
+        "prefix": "Log Source",
+        "body": "SeleniumLibrary.Log Source \t loglevel=INFO",
+        "description": "Log and returns the HTML Source of current URL"
+    },
+    "Selenium Log Title":{
+        "prefix": "Log Title",
+        "body": "SeleniumLibrary.Log Title",
+        "description": "Log and returns the title of the current page"
+    },
+    "Selenium Maximize Browser Window":{
+        "prefix": "Maximize Browser Window",
+        "body": "SeleniumLibrary.Maximize Browser Window",
+        "description": "Maximize Browser Window"
+    },
+    "Selenium Mouse Down":{
+        "prefix": "Mouse Down",
+        "body": "SeleniumLibrary.Mouse Down \t locator=${1:webelement}",
+        "description": "Simulates pressing the left mouse button on the element locator"
+    },
+    "Selenium Mouse Down On Image":{
+        "prefix": "Mouse Down On Image",
+        "body": "SeleniumLibrary.Mouse Down On Image \t locator=${1:webelement}",
+        "description": "Simulates pressing the left mouse button on the image locator"
+    },
+    "Selenium Mouse Down On Link":{
+        "prefix": "Mouse Down On Link",
+        "body": "SeleniumLibrary.Mouse Down On Link \t locator=${1:webelement}",
+        "description": "Simulates mouse down event on a link identified by locator"
+    },
+    "Selenium Mouse Out":{
+        "prefix": "Mouse Out",
+        "body": "SeleniumLibrary.Mouse Out \t locator=${1:webelement}",
+        "description": "Simulates moving the mouse away from locator"
+    },
+    "Selenium Mouse Over":{
+        "prefix": "Mouse Over",
+        "body": "SeleniumLibrary.Mouse Over \t locator=${1:webelement}",
+        "description": "Simulates hovering the mouse over the element locator"
+    },
+    "Selenium Mouse Up":{
+        "prefix": "Mouse Up",
+        "body": "SeleniumLibrary.Mouse Up \t locator=${1:webelement}",
+        "description": "Simulates releasing the left mouse button on the element locator"
+    },
+    "Selenium Open Browser":{
+        "prefix": "Mouse Up",
+        "body": "SeleniumLibrary.Open Browser \t url=${1:weburlelement} \t browser=${2:chrome} \t alias=None \t options=None \t executable_path=None",
+        "description": "Opens a new Browser instance to the optional url"
+    },
+    "Selenium Open Context Menu":{
+        "prefix": "Open Context Menu",
+        "body": "SeleniumLibrary.Open Context Menu \t locator=${1:webelement} ",
+        "description": "Opens the context menu on the element identified by locator"
+    },
+    "Selenium Page Should Contain":{
+        "prefix": "Page Should Contain",
+        "body": "SeleniumLibrary.Page Should Contain \t text=${1:expected_str} \t loglevel=INFO ",
+        "description": "Verifies the current page contains text"
+    },
+    "Selenium Page Should Contain Button":{
+        "prefix": "Page Should Contain Button",
+        "body": "SeleniumLibrary.Page Should Contain Button \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies button found from current page"
+    },
+    "Selenium Page Should Contain Checkbox":{
+        "prefix": "Page Should Contain Checkbox",
+        "body": "SeleniumLibrary.Page Should Contain Checkbox \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies checkbox found from current page"
+    },
+    "Selenium Page Should Contain Element":{
+        "prefix": "Page Should Contain Element",
+        "body": "SeleniumLibrary.Page Should Contain Element \t locator=${1:webelement} \t message=None \t loglevel=INFO \t limit=${1:No_of_elements}",
+        "description": "Verifies element (no of element if limit is not None} found from current page"
+    },
+    "Selenium Page Should Contain Image":{
+        "prefix": "Page Should Contain Image",
+        "body": "SeleniumLibrary.Page Should Contain Image \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies image found from current page"
+    },
+    "Selenium Page Should Contain Link":{
+        "prefix": "Page Should Contain Link",
+        "body": "SeleniumLibrary.Page Should Contain Link \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies link found from current page"
+    },
+    "Selenium Page Should Contain List":{
+        "prefix": "Page Should Contain List",
+        "body": "SeleniumLibrary.Page Should Contain List \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies selection list found from current page"
+    },
+    "Selenium Page Should Contain Radio Button":{
+        "prefix": "Page Should Contain Radio Button",
+        "body": "SeleniumLibrary.Page Should Contain Radio Button \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies radio button found from current page"
+    },
+    "Selenium Page Should Contain Textfield":{
+        "prefix": "Page Should Contain Textfield",
+        "body": "SeleniumLibrary.Page Should Contain Textfield \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies text field found from current page"
+    },
+    "Selenium Page Should Not Contain":{
+        "prefix": "Page Should Not Contain",
+        "body": "SeleniumLibrary.Page Should Contain \t text=${1:expected_str} \t loglevel=INFO ",
+        "description": "Verifies the current page does not contain text"
+    },
+    "Selenium Page Should Not Contain Button":{
+        "prefix": "Page Should Not Contain Button",
+        "body": "SeleniumLibrary.Page Should Not Contain Button \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies current page does not contain"
+    },
+    "Selenium Page Should Contain Not Checkbox":{
+        "prefix": "Page Should Not Contain Checkbox",
+        "body": "SeleniumLibrary.Page Should Not Contain Checkbox \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies current page does not contain checkbox"
+    },
+    "Selenium Page Should Not Contain Element":{
+        "prefix": "Page Should Not Contain Element",
+        "body": "SeleniumLibrary.Page Should Not Contain Element \t locator=${1:webelement} \t message=None \t loglevel=INFO",
+        "description": "Verifies element is not found on thecurrent page"
+    },
+    "Selenium Page Should Not Contain Image":{
+        "prefix": "Page Should Not Contain Image",
+        "body": "SeleniumLibrary.Page Should Not Contain Image \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies current page does not contain image"
+    },
+    "Selenium Page Should Not Contain Link":{
+        "prefix": "Page Should Not Contain Link",
+        "body": "SeleniumLibrary.Page Should Not Contain Link \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies current page does not contain link"
+    },
+    "Selenium Page Should Not Contain List":{
+        "prefix": "Page Should Contain List",
+        "body": "SeleniumLibrary.Page Should Not Contain List \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies selection list is not found from current page"
+    },
+    "Selenium Page Should Not Contain Radio Button":{
+        "prefix": "Page Should Not Contain Radio Button",
+        "body": "SeleniumLibrary.Page Should Not Contain Radio Button \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies radio button is not found from current page"
+    },
+    "Selenium Page Should Not Contain Textfield":{
+        "prefix": "Page Should Not Contain Textfield",
+        "body": "SeleniumLibrary.Page Should Not Contain Textfield \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
+        "description": "Verifies text field is not found from current page"
     }
     // rpa excel files
     // "Open RPA Excel":{
