@@ -31,6 +31,13 @@ Should be plug and play.
 Only works with ".robot" files.
 
 ## Release Notes
+### 0.0.3
+
+Added Selenium Library code snippets
+
+### 0.0.2
+
+Fixed Typos
 
 ### 0.0.1
 
