@@ -3,7 +3,7 @@
     "displayName": "Robot Snippets",
     "publisher": "DevPandey",
     "description": "Robot framework code snippets",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.38.0"
     },
