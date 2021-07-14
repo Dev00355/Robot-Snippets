@@ -870,6 +870,296 @@
         "prefix": "Page Should Not Contain Textfield",
         "body": "SeleniumLibrary.Page Should Not Contain Textfield \t locator=${1:webelement} \t message=None \t loglevel=INFO ",
         "description": "Verifies text field is not found from current page"
+    },
+    "Selenium Press Key":{
+        "prefix": "Press Key",
+        "body": "SeleniumLibrary.Press Key \t locator=${1:webelement} \t key=${2:key}",
+        "description": "Simulates Press Key"
+    },
+    "Selenium Press Keys":{
+        "prefix": "Press Keys",
+        "body": "SeleniumLibrary.Press Keys \t locator=${1:webelement} \t ${2:CTRL+c}",
+        "description": "Simulates Press Key(s)"
+    },
+    "Selenium Radio Button Should Be Set To":{
+        "prefix": "Radio Button Should Be Set To",
+        "body": "SeleniumLibrary.Radio Button Should Be Set To \t group_name=${1:group} \t ${2:value}",
+        "description": "Verifies radio button group group_name is set to value"
+    },
+    "Selenium Radio Button Should Not Be Selected":{
+        "prefix": "Radio Button Should Not Be Selected",
+        "body": "SeleniumLibrary.Radio Button Should Not Be Selected \t group_name=${1:group}",
+        "description": "Verifies radio button group group_name has no selection"
+    },
+    "Selenium Register Keyword To Run On Failure":{
+        "prefix": "Register Keyword To Run On Failure",
+        "body": "SeleniumLibrary.Register Keyword To Run On Failure \t keyword=${1:keyword}",
+        "description": "Sets the keyword to execute, when a SeleniumLibrary keyword fails"
+    },
+    "Selenium Reload Page":{
+        "prefix": "Reload Page",
+        "body": "SeleniumLibrary.Reload Page",
+        "description": "Simulates user reloading page."
+    },
+    "Selenium Remove Location Strategy":{
+        "prefix": "Remove Location Strategy",
+        "body": "SeleniumLibrary.Remove Location Strategy \t strategy_name=${1:name}",
+        "description": "Removes a previously added custom location startegy"
+    },
+    "Selenium Scroll Element Into View":{
+        "prefix": "Scroll Element Into View",
+        "body": "SeleniumLibrary.Scroll Element Into View \t locator=${1:webelement}",
+        "description": "Scroll Element identified by locator into view"
+    },
+    "Selenium Select All From List":{
+        "prefix": "Select All From List",
+        "body": "SeleniumLibrary.Select All From List \t locator=${1:webelement}",
+        "description": "Select all options from multi-selection list locator"
+    },
+    "Selenium Select Checkbox":{
+        "prefix": "Select Checkbox",
+        "body": "SeleniumLibrary.Select Checkbox \t locator=${1:webelement}",
+        "description": "Select checkbox identified by locator"
+    },
+    "Selenium Select Frame":{
+        "prefix": "Select Frame",
+        "body": "SeleniumLibrary.Select Frame \t locator=${1:webelement}",
+        "description": "Select frame identified by locator as the current frame"
+    },
+    "Selenium Select Frame List By Index":{
+        "prefix": "Select Frame List By Index",
+        "body": "SeleniumLibrary.Select Frame List By Index \t locator=${1:webelement} \t ${2:indexes}",
+        "description": "Select options from selection list locator by indexes"
+    },
+    "Selenium Select Frame List By Label":{
+        "prefix": "Select Frame List By Lable",
+        "body": "SeleniumLibrary.Select Frame List By Label \t locator=${1:webelement} \t ${2:labels}",
+        "description": "Select options from selection list locator by labels"
+    },
+    "Selenium Select Frame List By Value":{
+        "prefix": "Select Frame List By Value",
+        "body": "SeleniumLibrary.Select Frame List By Value \t locator=${1:webelement} \t ${2:values}",
+        "description": "Select options from selection list locator by values"
+    },
+    "Selenium Select Radio Button":{
+        "prefix": "Select Radio Button",
+        "body": "SeleniumLibrary.Select Radio Button \t group_name=${1:group} \t ${2:value}",
+        "description": "Sets the radio button group group_name to value"
+    },
+    "Selenium Set Browser Implicit Wait":{
+        "prefix": "Set Browser Implicit Wait",
+        "body": "SeleniumLibrary.Set Browser Implicit Wait \t value=${1:timedelta}",
+        "description": "Sets the implict wait value used by Selenium"
+    },
+    "Selenium Set Focus To Element":{
+        "prefix": "Set Focus To Element",
+        "body": "SeleniumLibrary.Set Focus To Element \t locator=${1:webelement}",
+        "description": "Sets the focus to the element identified by locator"
+    },
+    "Selenium Set Screenshot Directory":{
+        "prefix": "Set Screenshot Directory",
+        "body": "SeleniumLibrary.Set Screenshot Directory \t path=${1:None}",
+        "description": "Sets the directory for captured screenshot"
+    },
+    "Selenium Set Selenium Implicit Wait":{
+        "prefix": "Set Selenium Implicit Wait",
+        "body": "SeleniumLibrary.Set Selenium Implicit Wait \t value=${1:timedelta}",
+        "description": "Sets the implict wait value used by Selenium"
+    },
+    "Selenium Set Selenium Speed":{
+        "prefix": "Set Selenium Speed",
+        "body": "SeleniumLibrary.Set Selenium Speed \t value=${1:timedelta}",
+        "description": "Sets the delay that is waited after each Selenium command"
+    },
+    "Selenium Set Selenium Timeout":{
+        "prefix": "Set Selenium Timeout",
+        "body": "SeleniumLibrary.Set Selenium Timeout \t value=${1:timedelta}",
+        "description": "Sets the timeout that is used by various keywords"
+    },
+    "Selenium Set Window Position":{
+        "prefix": "Set Window Position",
+        "body": "SeleniumLibrary.Set Window Position \t ${1:100} \t ${2:200}",
+        "description": "Sets window position using x and y coordinates"
+    },
+    "Selenium Set Window Size":{
+        "prefix": "Set Window Size",
+        "body": "SeleniumLibrary.Set Window Size \t width=${1:100} \t height=${2:200} \t inner=False",
+        "description": "Sets window position using x and y coordinates"
+    },
+    "Selenium Simulate Event":{
+        "prefix": "Simulate Event",
+        "body": "SeleniumLibrary.Simulate Event \t locator=${1:webelement} \t event=${2:event}",
+        "description": "Simulates event on the element identified by locator"
+    },
+    "Selenium Submit Form":{
+        "prefix": "Submit Form",
+        "body": "SeleniumLibrary.Submit Form \t locator=${1:None}",
+        "description": "Submits the form identified by locator"
+    },
+    "Selenium Switch Browser":{
+        "prefix": "Switch Browser",
+        "body": "SeleniumLibrary.Switch Browser \t ${1:index_or_alias}",
+        "description": "Switch between active browsers using idex of aliases"
+    },
+    "Selenium Switch Window":{
+        "prefix": "Switch Window",
+        "body": "SeleniumLibrary.Switch Window \t locator=${1:MAIN} \t timeout=None \t browser=CURRENT",
+        "description": "Switches to browser window matching locator"
+    },
+    "Selenium Table Cell Should Contain":{
+        "prefix": "Table Cell Should Contain",
+        "body": "SeleniumLibrary.Table Cell Should Contain \t locator=${1:webelement} \t row=${2:1} \t column=${3:1} \t ${4:expected} \t loglevel=INFO",
+        "description": "Verifies table cell conatins text expected"
+    },
+    "Selenium Table Column Should Contain":{
+        "prefix": "Table Column Should Contain",
+        "body": "SeleniumLibrary.Table Column Should Contain \t locator=${1:webelement} \t column=${2:1} \t ${3:expected} \t loglevel=INFO",
+        "description": "Verifies table column conatins text expected"
+    },
+    "Selenium Table Footer Should Contain":{
+        "prefix": "Table Footer Should Contain",
+        "body": "SeleniumLibrary.Table Footer Should Contain \t locator=${1:webelement} \t ${2:expected} \t loglevel=INFO",
+        "description": "Verifies table footer conatins text expected"
+    },
+    "Selenium Table Header Should Contain":{
+        "prefix": "Table Header Should Contain",
+        "body": "SeleniumLibrary.Table Header Should Contain \t locator=${1:webelement} \t ${2:expected} \t loglevel=INFO",
+        "description": "Verifies table header conatins text expected"
+    },
+    "Selenium Table Row Should Contain":{
+        "prefix": "Table Row Should Contain",
+        "body": "SeleniumLibrary.Table Row Should Contain \t locator=${1:webelement} \t row=${2:1} \t ${3:expected} \t loglevel=INFO",
+        "description": "Verifies table row conatins text expected"
+    },
+    "Selenium Table Should Contain":{
+        "prefix": "Table Should Contain",
+        "body": "SeleniumLibrary.Table Should Contain \t locator=${1:webelement} \t ${2:expected} \t loglevel=INFO",
+        "description": "Verifies table conatins text expected"
+    },
+    "Selenium Textarea Should Contain":{
+        "prefix": "Textarea Should Contain",
+        "body": "SeleniumLibrary.Textarea Should Contain \t locator=${1:webelement} \t ${2:expected} \t message=None",
+        "description": "Verifies Textarea conatins text expected"
+    },
+    "Selenium Textarea Value Should Be":{
+        "prefix": "Textarea Value Should Be",
+        "body": "SeleniumLibrary.Textarea Value Should Be \t locator=${1:webelement} \t ${2:expected} \t message=None",
+        "description": "Verifies Textarea locator has exactly text expected"
+    },
+    "Selenium Textfield Should Contain":{
+        "prefix": "Textfield Should Contain",
+        "body": "SeleniumLibrary.Textfield Should Contain \t locator=${1:webelement} \t ${2:expected} \t message=None",
+        "description": "Verifies text field conatins text expected"
+    },
+    "Selenium Textfield Value Should Be":{
+        "prefix": "Textfield Value Should Be",
+        "body": "SeleniumLibrary.Textfield Value Should Be \t locator=${1:webelement} \t ${2:expected} \t message=None",
+        "description": "Verifies Textfield locator has exactly text expected"
+    },
+    "Selenium Title Should Be":{
+        "prefix": "Title Should Be",
+        "body": "SeleniumLibrary.Title Should Be \t title=${1:title} \t message=None",
+        "description": "Verifies Current page title equals title"
+    },
+    "Selenium Unselect All From List":{
+        "prefix": "Unselect All From List",
+        "body": "SeleniumLibrary.Unselect All From List \t locator=${1:webelement}",
+        "description": "Unselects all options from multi-selection list locator"
+    },
+    "Selenium Unselect Checkbox":{
+        "prefix": "Unselect Checkbox",
+        "body": "SeleniumLibrary.Unselect Checkbox \t locator=${1:webelement}",
+        "description": "Removes the selection of checkbox identified by locator and does nothing if checkbox is not selected"
+    },
+    "Selenium Unselect Frame":{
+        "prefix": "Unselect Frame",
+        "body": "SeleniumLibrary.Unselect Frame",
+        "description": "Sets the main frame as current frame"
+    },
+    "Selenium Unselect From List By Index":{
+        "prefix": "Unselect From List By Index",
+        "body": "SeleniumLibrary.Unselect From List By Index \t locator=${1:webelement} \t ${2:indexes}",
+        "description": "Unselects options from selection list locator by indexes"
+    },
+    "Selenium Unselect From List By Lable":{
+        "prefix": "Unselect From List By Lable",
+        "body": "SeleniumLibrary.Unselect From List By Label \t locator=${1:webelement} \t ${2:lables}",
+        "description": "Unselects options from selection list locator by labels"
+    },
+    "Selenium Unselect From List By Value":{
+        "prefix": "Unselect From List By Value",
+        "body": "SeleniumLibrary.Unselect From List By Value \t locator=${1:webelement} \t ${2:values}",
+        "description": "Unselects options from selection list locator by values"
+    },
+    "Selenium Wait For Condition":{
+        "prefix": "Wait For Condition",
+        "body": "SeleniumLibrary.Wait For Condition \t ${1:conditon} \t timeout=None \t error=None",
+        "description": "Wait until condition is true or timeout expires"
+    },
+    "Selenium Wait Until Element Contains":{
+        "prefix": "Wait Until Element Contains",
+        "body": "SeleniumLibrary.Wait Until Element Contains \t locator=${1:webelement} \t text=${2:text} \t timeout=None \t error=None",
+        "description": "Waits until the element locator contains text"
+    },
+    "Selenium Wait Until Element Does Not Contain":{
+        "prefix": "Wait Until Element Does Not Contain",
+        "body": "SeleniumLibrary.Wait Until Element Does Not Contain \t locator=${1:webelement} \t text=${2:text} \t timeout=None \t error=None",
+        "description": "Waits until the element locator does not contain text"
+    },
+    "Selenium Wait Until Element Is Enabled":{
+        "prefix": "Wait Until Element Is Enabled",
+        "body": "SeleniumLibrary.Wait Until Element Is Enabled \t locator=${1:webelement} \t timeout=None \t error=None",
+        "description": "Waits until the element locator Is Enabled"
+    },
+    "Selenium Wait Until Element Is Not Visible":{
+        "prefix": "Wait Until Element Is Not Visible",
+        "body": "SeleniumLibrary.Wait Until Element Is Not Visible \t locator=${1:webelement} \t timeout=None \t error=None",
+        "description": "Waits until the element locator is not visible"
+    },
+    "Selenium Wait Until Element Is Visible":{
+        "prefix": "Wait Until Element Is Visible",
+        "body": "SeleniumLibrary.Wait Until Element Is Visible \t locator=${1:webelement} \t timeout=None \t error=None",
+        "description": "Waits until the element locator is visible"
+    },
+    "Selenium Wait Until Location Contains":{
+        "prefix": "Wait Until Location Contains",
+        "body": "SeleniumLibrary.Wait Until Location Contains \t ${1:location} \t timeout=None \t message=None",
+        "description": "Waits until the current url contains expected"
+    },
+    "Selenium Wait Until Location Does Not Contain":{
+        "prefix": "Wait Until Location Does Not Contain",
+        "body": "SeleniumLibrary.Wait Until Location Does Not Contain \t ${1:location} \t timeout=None \t message=None",
+        "description": "Waits until the current url does not contain expected"
+    },
+    "Selenium Wait Until Location Is":{
+        "prefix": "Wait Until Location Is",
+        "body": "SeleniumLibrary.Wait Until Location Is \t ${1:expected} \t timeout=None \t message=None",
+        "description": "Waits until the current url is expected"
+    },
+    "Selenium Wait Until Location Is Not":{
+        "prefix": "Wait Until Location Is",
+        "body": "SeleniumLibrary.Wait Until Location Is Not \t ${1:location} \t timeout=None \t message=None",
+        "description": "Waits until the current url is not location"
+    },
+    "Selenium Wait Until Page Contains":{
+        "prefix": "Wait Until Page Contains",
+        "body": "SeleniumLibrary.Wait Until Page Contains \t ${1:text} \t timeout=None \t error=None",
+        "description": "Waits until text appears on the current page"
+    },
+    "Selenium Wait Until Page Contains Element":{
+        "prefix": "Wait Until Page Contains Element",
+        "body": "SeleniumLibrary.Wait Until Page Contains \t locator=${1:webelement} \t timeout=None \t error=None \t limit=None",
+        "description": "Waits until the element locator appears on the current page"
+    },
+    "Selenium Wait Until Page Does Not Contain":{
+        "prefix": "Wait Until Does Not Contain",
+        "body": "SeleniumLibrary.Wait Until Page Does Not Contain \t ${1:text} \t timeout=None \t error=None",
+        "description": "Waits until text does not appear on the current page"
+    },
+    "Selenium Wait Until Page Does Not Contain Element":{
+        "prefix": "Wait Until Page Does Not Contain Element",
+        "body": "SeleniumLibrary.Wait Until Page Does Not Contain \t locator=${1:webelement} \t timeout=None \t error=None \t limit=None",
+        "description": "Waits until the element locator disappears from the current page"
     }
     // rpa excel files
     // "Open RPA Excel":{
